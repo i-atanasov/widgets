@@ -21,7 +21,7 @@ const Convert = ({ language, text }) => {
 //delay
         const delayedRequest = setTimeout(() => {
             doTranslation();
-        }, 500);
+        }, 300);
 //clean up
         return () => {
             clearTimeout(delayedRequest);
