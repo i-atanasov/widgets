@@ -4,6 +4,7 @@ import Search from "./components/Search";
 import Dropdown from "./components/Dropdown";
 import { items } from "./data";
 import { options } from './DropdownOptions';
+import Translate from './components/Translate'
 
 const App = () => {
 
@@ -12,17 +13,20 @@ const App = () => {
 
     return (
         <div>
+            <Translate />
+        {/*
             <button onClick={() => setShowDropdown(!showDropdown)}>Toggle dropdown</button>
 
             {showDropdown ?
-                <Dropdown  
+                <Dropdown 
+                label='Select a color:' 
                 selected={selected} 
                 options={options}
                 onSelectedChange={setSelected}
                 /> : null
             }
             
-            {/*<Search />
+            <Search />
                 <h4 className="ui large header">National records:</h4>
             <Accordion items={items}/>*/}
         </div>
