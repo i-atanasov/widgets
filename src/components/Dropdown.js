@@ -46,6 +46,11 @@ const Dropdown = ({ options, selected, onSelectedChange, label }) => {
                     <div className="text">{selected.label}</div>
                     <div className={`menu ${open ? 'visible transition' : ''}`}>{renderedOption}</div>
                 </div>
+                <div>
+                    <h1 style={{color: selected.value}} className="ui centered huge header"><br/><br/><br/>
+                        Change the color of the text.
+                    </h1>
+                </div> 
             </div>
         </div>
         );
